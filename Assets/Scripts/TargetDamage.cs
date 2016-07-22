@@ -43,5 +43,8 @@ public class TargetDamage : MonoBehaviour {
 		spriteRenderer.enabled = false;
 		myCollider2D.enabled = false;
 		myRigidBody2D.isKinematic = true;
+		ParticleSystem myParticleSystem = GetComponent<ParticleSystem> ();
+		myParticleSystem.Play ();
+
 	}
 }
